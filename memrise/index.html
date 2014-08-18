@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Memrise</title>
+
+		<meta name="description" content="Memrise">
+		<meta name="author" content="Elsabe" >
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Memrise</h1>
+					<img src="images/memrise.jpg" alt="Memrise">
+				</section>
+
+				<section>
+					<ul>
+						<li>Both the product and the company is called Memrise</li>
+						<li>Source code available on <a href="https://github.com/Memrise" >https://github.com/Memrise</a></li>		
+						<li>Web, Android and iOS devices</li>
+						<li>Target audience
+							<ul>Mainly adults</ul>
+							<ul>Depends on the course</ul>						
+						</li>
+					</ul>		
+				</section>
+
+				<section>
+					<h2>Techniques</h2>
+					<ul>
+						<li>Mnemonics</li>
+						<li>Flashcards</li>
+						<li>Spacing</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Menmonics</h2>
+					<p>
+						Associating a picture, word or sound with a concept can assist with remembering it. Called a <i>mem</i>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Flashcard</h2>
+					<p>
+						All necessary information is encoded on a flashcard that is shown at key points.
+					</p>
+					<img src="images/flashcard.png" alt="flashcard">
+				</section>
+
+				<section>
+					<h2>Spacing</h2>
+					<p>People memorise items better if they are studied a few times over a long time. </p>
+				</section>
+
+				<section>
+					<h2>Learning theories</h2>
+					<h3>Behaviourism</h3>
+					<ul>
+						<li>Repetition</li>
+						<li>Small progressive tasks</li>						
+					</ul>					
+				</section>
+				
+				<section>
+					<h2>Learning theories</h2>
+					<h3>Cognitivism</h3>
+					<ul>
+						<li>Associate new concepts with known concepts (mnemonics)</li>
+						<li>Pace controlled by learner</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Learning styles</h2>
+					<h3>VARK</h3>
+					<ol>
+						<li>Visual</li>
+						<li>Read/write</li>
+						<li>Some auditory</li>
+					</ol>
+				</section>
+					<!--p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="?#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon#/themes">Moon</a> -
+						<a href="?theme=solarized#/themes">Solarized</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p-->
+				<section>
+					<h1>Information</h1>
+					<ul>
+						<li>http://www.memrise.com/about/</li>
+						<li>http://en.wikipedia.org/wiki/Memrise</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
