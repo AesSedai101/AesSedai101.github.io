@@ -121,7 +121,12 @@
 				  <p>Index poisoning<p>
 				  <p>Sybil attack</p>
 				  <aside class="notes">
-				  
+				  The easiest way to neutralise of a Command-and-Control botnet is to get rid of the server it depends on. If the bots cannot connect to the server, they will not be able to do anything malicious.
+				  A riskier strategy is to try to take over a server. This effectively gives you control over at least a part of the botnet. You can then try to get the botnet to destroy itself.
+				  Peer-to-Peer networks have no centralized server, so the previously mentioned defenses are not affective against them. This is where the next two attacks come in.
+				  Index poisoning is effecive against bot that uses the Peer-to-Peer architecture to pass on commands. The bots insert commands into the peer-to-peer table under predetermined indices to allow other bots to retrieve them.
+				  Adding other data under the same indices will prevent bots from retrieving the commands.
+				  A sybil attack inserts or replaces nodes in a P2P network in an attempt to monitor or change botnet traffic.
 				  </aside>
 				</section>
 				
