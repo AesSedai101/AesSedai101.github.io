@@ -35,6 +35,11 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		
+		<style type="text/css">
+			#current-slide{}
+			#next-slide{}
+		</style>
 	</head>
 
 	<body>
@@ -60,7 +65,7 @@
 					</aside>
 				</section>
 
-				<section> <!-- TODO: update this -->
+				<section>
 					<h3>In this presentation</h3>
 					<ul>
 						<li>Overview of botnets</li>
@@ -214,26 +219,35 @@
 				  <img src="images/model.jpg" />
 				  <aside class="notes">
 				    This images shows the components and their interaction.
-				    <ol>
-				      <li>The bot initiates a connection by pinging the server</li>
-				      <li></li>
-				      <li></li>
-				      <li></li>
-				    </ol>
+				    
+					<p>The bot initiates a connection by pinging the server (1)</p>
+					<p>Server hands off connection to separate thread (3)</p>
+					<p>Thread passes info back to the bot (2)</p>
+					<p>Bot passes the info to the correct module (4) </p>
 				  </aside>
 				</section>
 				
 				<section>
 				  <h3>Communication protocol</h3>
 				  <p>TCP</p>
-				  <table>
-				    <tr>
-				      <th>Command code</th><th>Bot version</th><th>Additional data</th>
-				    </tr>
-				    <tr>
-				      <td>unsigned 8-bit integer</td><td>unsigned 8-bit integer</td><td></td>
-				    </tr>
-				  </table>
+				  <p> All communication starts
+					<ul>
+					<li>Command code</li>
+					<li>Bot version</li>
+					</p>
+					<aside class="notes">
+					The bot initiates the TCP connection and pass a specific command code and the bot version to the server.
+					</aside>
+				</section>
+				
+				<section>
+					<h3>Command codes</h3>
+					<table>
+					<tr><td>P</td><td>Ping</td></tr>
+					<tr><td>S</td><td>Transmit data</td></tr>
+					<tr><td>U</td><td>Update</td></tr>
+					<tr><td>D</td><td>Destroy</td></tr>
+					</table>
 				</section>
 				
 				<section>
@@ -266,7 +280,6 @@
 				  <p>Network traffic</p>
 				</section>
 				
-				<!-- TODO: add privacy concerns? -->
 				<section>
 				  <h3>Suggestions for future work</h3>
 				  <p>Propagation mechanisms</p>
