@@ -172,11 +172,18 @@
 				<section>
 					<h3>Problem statement (reminder)</h3>
 					<p>Companies can not easily monitor private cloud environments without changing the underlying architecture of the cloud.</p>
+					
+					<aside class="notes">
+					Just as a reminder: the problem statement. The soluion must allow companies to monitor employee usage of cloud resources.
+					</aside>
 				</section>
 				
 				<section>
 				  <h3>The solution</h3>
 				  <p>Use a botnet to collect data about employee usage from cloud instances.</p>
+				  <aside class="notes">
+				    The solution: use a botnet to send usage data to a central service.
+				  </aside>
 				</section>
 				
 				<section>
@@ -192,15 +199,28 @@
 				
 				<section>
 				  <h3>Solution features</h3>
+				  <p>Collect usage data</p>
 				  <p>Update</p>
 				  <p>Delete</p>
 				  <p>Report</p>
 				  <p>Extensibility<p>
+				  <aside class="notes">
+				    The botnet has various features, the most important one being the ability to gather usage data. For this proof of concept I implemented a keylogger. The bot can also update itself, to fix issues or add new modules or delete itself if the solution isn't needed anymore. The bots report the data they gathes to the central command and control server. The botnet was built with extensibility in mind, allowing users to easily add more functionality.
+				  </aside>
 				</section>
 				
 				<section>
 				  <h3>Solution components</h3>
 				  <img src="images/model.jpg" />
+				  <aside class="notes">
+				    This images shows the components and their interaction.
+				    <ol>
+				      <li>The bot initiates a connection by pinging the server</li>
+				      <li></li>
+				      <li></li>
+				      <li></li>
+				    </ol>
+				  </aside>
 				</section>
 				
 				<section>
