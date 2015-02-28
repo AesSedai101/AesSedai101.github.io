@@ -3,6 +3,7 @@ layout: post
 title:  "Online LaTeX compiler"
 date:   2014-06-29 22:21:00
 categories: latex 
+location: github
 ---
 I use LaTeX almost exclusively for my University assignments. While searching for something online I came across <a href="http://latex.codecogs.com/gif.latex">http://latex.codecogs.com/gif.latex</a>. This site allows you to pass in a formula as a GET parameter and it gives you back the formatted LaTeX.
 

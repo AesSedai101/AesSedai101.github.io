@@ -3,6 +3,7 @@ layout: post
 title:  "Extracting JPEG DCT coefficients"
 date:   2014-07-10 23:08:00
 categories: c++ jpeg jpg dct libjpeg
+location: github
 ---
 Extracting the DCT coefficients from a JPEG image seems like a fairly simple task. However, there is almost no examples or documentation online on how to do this - most people just suggest using libjpeg.
 

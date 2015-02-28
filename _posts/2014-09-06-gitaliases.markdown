@@ -3,6 +3,7 @@ layout: post
 title:  "Git aliases"
 date:   2014-09-06 12:00:00
 categories: git alias
+location: github
 ---
 Git is a very powerful tool, but it can be tricky to learn and some of the commands can be hard to remember. Aliases make this a bit simpler by allowing you to essentially define custom commands. Some aliases I use are listed below.
 

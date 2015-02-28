@@ -3,6 +3,7 @@ layout: post
 title:  "Android runtime exception handling"
 date:   2014-04-20 12:00:00
 categories: android RuntimeException java
+location: github
 ---
 If an Android app throws a RuntimeException, the app will close and the user will be informed that the app closed unexpectedly. This is a bad user experience. Luckily, it is possible to catch these exceptions and handle them gracefully.
 

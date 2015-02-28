@@ -3,6 +3,7 @@ layout: post
 title:  "Switching Maven versions easily on Windows "
 date:   2014-05-29 11:48:00
 categories: maven windows symlinks
+location: github
 ---
 What do you do if plugins on different branches of your Git repo require different versions of Maven? First you spend half an hour figuring out that it is the Maven version that is wrong. After that, you attempt to switch Maven versions manually and completely mess up your Maven installations. Finally you spend an hour fixing Maven and searching for an easier solution.
 

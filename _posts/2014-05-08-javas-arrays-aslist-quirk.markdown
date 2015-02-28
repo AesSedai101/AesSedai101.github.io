@@ -3,6 +3,7 @@ layout: post
 title:  "Java's Arrays.asList quirk"
 date:   2014-04-20 20:40:00
 categories: android RuntimeException java
+location: github
 ---
 Recently, I was working on an program that used arrays heavily. Since I'm lazy and I needed to sort the array, I converted the array to a list in order to use the built-in functions.
 
