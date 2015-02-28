@@ -3,23 +3,17 @@ layout: default
 ---
 
 <div class="home">
+  
+    <h1> Blog posts </h1>
 
-  <h1>Hi</h1>
-  <p>I created this page to keep notes of things I do and make and will (probably) need again. Hopefuly it will help you too </p>
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+    <div class="post-list"> 
+	    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        </h3>
+	</div>
     {% endfor %}
-  </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
