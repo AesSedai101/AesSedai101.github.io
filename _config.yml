@@ -1,8 +1,8 @@
 # Site settings
-title: Elsabe Ros
+title: Elsabé Ros
 subtitle: I write things
 description: > # this means to ignore newlines until "baseurl:" 
-  Software engineer, mainly Android, interested in Computer Security and Artificial Inteligence.
+  Hi! I'm Elsabé, a software engineer, working mainly in Android, but dabbling with all kinds of technologies, including iOS. I'm also interested in computer and information security, digital forensics and artificial intelligence.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://aessedai101.github.io" # the base hostname & protocol for your site
 twitter_username: AesSedai101
@@ -11,4 +11,3 @@ github_username:  AesSedai101
 # Build settings
 markdown: kramdown
 highlighter: pygments
-
