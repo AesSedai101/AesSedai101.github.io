@@ -8,7 +8,7 @@ layout: default
 
     {% for post in site.posts %}
     <div class="post-list"> 
-        <img src="images/{{ post.location }}.ico" class="post-image" /> 
+        <img src="images/{{ post.location }}.ico" class="post-image" height="16px"/> 
 	    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
