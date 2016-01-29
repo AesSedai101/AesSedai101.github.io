@@ -11,3 +11,6 @@ github_username:  AesSedai101
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+collections:
+  - gists

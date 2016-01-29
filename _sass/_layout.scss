@@ -243,3 +243,23 @@
         }
     }
 }
+
+.column-right {
+    float: right;
+    width: 200px;
+    margin-right: 0px;
+}
+
+.column-left {
+    float: left;
+    width: calc(850px - 225px - (#{$spacing-unit} * 2));
+}
+
+.border {
+    border: solid;
+    border-color: $grey-color;
+    background-color: $grey-color-light;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}

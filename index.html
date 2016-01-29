@@ -3,19 +3,28 @@ layout: default
 ---
 
 <div class="home">
-  
     <h1> Blog posts </h1>
-
-    {% for post in site.posts %}
-    <div class="post-list"> 
+    <div class="column-left">
+        {% for post in site.posts %}
+        <div class="post-list">
         <img src="images/{{ post.location }}.ico" class="post-image" height="16px"/> 
-	    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-	</div>
-    {% endfor %}
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            <h3>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+        </div>
+        {% endfor %}
 
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+
+    <div class="column-right border">
+        <h3>Gists</h3>
+        {% for gist in site.gists %}
+        <ul>
+           <li> <a class="" href="{{ gist.gist_url }}">{{ gist.title }}</a> </li>
+        </ul>
+        {% endfor %}
+    </div>
 </div>
