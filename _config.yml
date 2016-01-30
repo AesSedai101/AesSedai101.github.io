@@ -1,9 +1,9 @@
 # Site settings
-title: Quirky blog title
+title: AesSedai101
 #email: 
-description: > # this means to ignore newlines until "baseurl:" 
-  Hi! I'm Elsabé, a software engineer, working mainly in Android, but dabbling with all kinds of technologies, including iOS. I'm also interested in computer and information security, digital forensics and artificial intelligence.
-footer_text: 'Theme by <a href="http://joshuaraichur.com">Joshua Raichur</a>. '
+sub: "Writing about whatever caught my interest"
+description: "Writing about whatever caught my interest"
+footer_text: 'Theme by <a href="http://github.com/raichur/material-jekyll">Joshua Raichur</a>. '
 baseurl: ""
 url: "https://aessedai101.github.io"
 
