@@ -1,16 +1,18 @@
 # Site settings
-title: Material Jekyll
-email: hello@joshuaraichur.com
-description: A Material Design inspired Jekyll theme
-footer_text: 'Made with <span class="icon-favorite pulse"></span> by <a href="http://joshuaraichur.com">Joshua Raichur</a>. <a href="http://github.com/raichur/material-jekyll">Fork the source.</a>'
-baseurl: "/material-jekyll"
+title: Quirky blog title
+#email: 
+description: > # this means to ignore newlines until "baseurl:" 
+  Hi! I'm Elsabé, a software engineer, working mainly in Android, but dabbling with all kinds of technologies, including iOS. I'm also interested in computer and information security, digital forensics and artificial intelligence.
+footer_text: 'Theme by <a href="http://joshuaraichur.com">Joshua Raichur</a>. '
+baseurl: ""
+url: "https://aessedai101.github.io"
 
 # Social usernames
-twitter_username: JoshuaRaichur
-github_username:  raichur
-dribbble_username: geek
-instagram_username: xpl.ore
-email: hello@joshuaraichur.com
+twitter_username: AesSedai101
+github_username:  AesSedai101
+#dribbble_username: geek
+#instagram_username: xpl.ore
+#email: 
 
 # Build settings
 markdown: kramdown
