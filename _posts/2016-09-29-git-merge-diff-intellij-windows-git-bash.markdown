@@ -41,9 +41,9 @@ The final part of the puzzle is figuring out which special characters to escape 
 The final step is to tell Git to make use of the configured `intellij` commands:
 
 	[merge]
-		tool = intellij
+	    tool = intellij
 	[diff]
         tool = intellij
         guitool = intellij
 
-My full `.gitconfig` file is available [as a Gist](https://gist.github.com/AesSedai101/cb4d896b68ab55e3991b).
+[My full `.gitconfig` file is available as a Gist](https://gist.github.com/AesSedai101/cb4d896b68ab55e3991b).
